@@ -5,5 +5,5 @@ using namespace tubex;
 
 int main()
 {
-
+return 0;
 }
