@@ -37,5 +37,8 @@
 
   add_executable(${PROJECT_NAME} main.cpp)
   target_compile_options(${PROJECT_NAME} PUBLIC ${TUBEX_CXX_FLAGS})
-  target_include_directories(${PROJECT_NAME} SYSTEM PUBLIC ${tubex_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIRS})
+  target_include_directories(${PROJECT_NAME} SYSTEM PUBLIC ${TUBEX_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIRS})
   target_link_libraries(${PROJECT_NAME} PUBLIC ${TUBEX_LIBRARIES} Ibex::ibex ${TUBEX_LIBRARIES})
+
+# Searching path for IBEX & tubex
+
